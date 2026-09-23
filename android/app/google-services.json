@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "270398480064",
+    "project_id": "salisense",
+    "storage_bucket": "salisense.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:270398480064:android:aadc4150b00658c5979725",
+        "android_client_info": {
+          "package_name": "com.salisense.salisense"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAR5DKFVEXa0v-T-IxTy9-O_Do3NyP0cXw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

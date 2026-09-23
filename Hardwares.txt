@@ -1,0 +1,16 @@
+Component	Specifications / Model	Purpose
+Microcontroller	ESP32 (Dual-core, built-in WiFi)	System controller and internet connectivity via WiFi
+EC Sensor	DFRobot Gravity EC Sensor K=1 (DFR0300 V2)	Conductivity-to-salinity measurement
+Temperature Sensor	DS18B20 Waterproof Probe	Temperature compensation for EC reading
+Freshwater Pump	5V DC Submersible Pump (1.1-1.6 L/min)	Freshwater dilution into test tank
+Saltwater Dosing Pump	5V DC Submersible Pump (1.1-1.6 L/min)	Pre-mixed saltwater dosing into test tank
+Relay Module	2-Channel 5V Relay Module	Pump switching control
+Test Tank	3-Liter Polyethylene Tank	Simulated enclosed fishpond environment
+Overflow Notch and Diversion Hose	Cut into tank wall at 3-liter fill line, with short hose to waste catch container	Passive overflow protection, caps tank volume during correction
+Manual Drain Valve	PVC ball valve, 1/2-inch, tank base	Operator-controlled volume and salinity reset between sessions
+Freshwater Reservoir	1.5-Liter container	Freshwater supply for dilution
+Saltwater Reservoir	1.5-Liter container with pre-mixed solution	Saltwater supply for dosing
+Power Supply	5V 3A Regulated DC Adapter	System power
+Enclosure	IP65-rated waterproof project box	Electronics protection
+Mobile Device	Android or iOS smartphone with Flutter app	User interface and monitoring
+Reservoir Float Sensors (x2)	Vertical float switch, passive dry contact (wired to 3.3V logic)	Low-fill detection for FT-09 reservoir fault

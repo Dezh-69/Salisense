@@ -1,0 +1,51 @@
+name: salisense
+description: "SaliSense — Real-time Salinity Monitoring for Enclosed Fishponds"
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.11.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+
+  # Firebase (FlutterFire) — PRD §8
+  firebase_core: ^3.13.0
+  firebase_auth: ^5.7.0
+  firebase_database: ^11.3.5
+
+  # Utilities
+  intl: ^0.20.3
+  csv: ^6.0.0
+  share_plus: ^11.0.0
+  google_fonts: ^6.2.1
+  path_provider: ^2.1.5
+  shared_preferences: ^2.3.5
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^6.0.0
+  flutter_launcher_icons: ^0.14.4
+  flutter_native_splash: ^2.4.7
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/images/logo.png"
+
+flutter_native_splash:
+  color: "#F1EFE8"
+  image: "assets/images/logo.png"
+  android: true
+  ios: true
