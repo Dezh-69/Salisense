@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'screens/dashboard_screen.dart';
 import 'screens/log_screen.dart';
+import 'screens/pond_config_screen.dart';
 import 'screens/device_selection_screen.dart';
 
 class MainShell extends StatefulWidget {
@@ -27,6 +28,7 @@ class _MainShellState extends State<MainShell> {
       onBackToDevices: _goBackToDeviceList,
     ),
     LogScreen(deviceCode: widget.deviceCode),
+    PondConfigScreen(deviceCode: widget.deviceCode),
   ];
 
   void _goBackToDeviceList() {
@@ -59,6 +61,11 @@ class _MainShellState extends State<MainShell> {
             icon: Icon(Icons.receipt_long_outlined),
             selectedIcon: Icon(Icons.receipt_long),
             label: 'Logs',
+          ),
+          NavigationDestination(
+            icon: Icon(Icons.settings_outlined),
+            selectedIcon: Icon(Icons.settings),
+            label: 'Settings',
           ),
         ],
       ),

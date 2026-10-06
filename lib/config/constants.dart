@@ -12,11 +12,13 @@ class AppConstants {
   static String pathSystemStatus(String deviceCode) => 'devices/$deviceCode/system/status';
   static String pathAlerts(String deviceCode) => 'devices/$deviceCode/alerts/active';
   static String pathAlertLogs(String deviceCode) => 'devices/$deviceCode/logs/alerts';
+  static String pathSettings(String deviceCode) => 'devices/$deviceCode/settings';
+  static String pathPumpTimeout(String deviceCode) => 'devices/$deviceCode/settings/pump_timeout';
 
   // --- Limits & Timings ---
   // Display only the last N logs to prevent excessive memory usage
   static const int maxLogsToDisplay = 1000;
   
-  // Timeout for pump activation fault check
-  static const int pumpFaultTimeoutSeconds = 24;
+  // Default pump fault timeout (overridden by Firebase settings/pump_timeout)
+  static const int defaultPumpFaultTimeoutSeconds = 24;
 }
